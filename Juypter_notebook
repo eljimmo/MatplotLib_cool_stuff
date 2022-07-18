@@ -1,0 +1,34 @@
+#setting the "%matlibplot notebook" at the beginning of Juypter editor, you can add recursive features or new data into graphs
+
+-------------------------
+
+
+%matplotlib notebook
+import matplotlib.pyplot as plt
+
+
+plt.plot(5, 5, 'o')
+plt.show()
+
+plt.ylabel("Y")
+plt.xlabel("X")
+plt.title("Plotting Example")
+
+
+-------------- 
+kinds of visual graphs are represented as "(example_data_df.plot(kind="line")"  = line plot 
+
+or 
+kinds of visual graphs are represented as "(example_data_df("column_name").plot(kind="hist")"   = histogram 
+
+Data sets involving immigration to Canada 
+
+rows and columns / metadata / Data -> Pandas Dataframing
+
+import numpy as np #scientific computing
+import pandas as pd #data structuring
+from _future_ import print_function # compatability to python 2
+
+$pip install xlrd #xlrd is a library for reading data and formatting information from Excel files in the historical .xls format.
+
+
