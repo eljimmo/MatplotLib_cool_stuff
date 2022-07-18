@@ -32,3 +32,16 @@ from _future_ import print_function # compatability to python 2
 $pip install xlrd #xlrd is a library for reading data and formatting information from Excel files in the historical .xls format.
 
 
+##https://domohelp.domo.com/hc/en-us/articles/360043931814-Fun-Sample-DataSets
+#here we are reading the excel sheet using pandas  
+
+df_can = pd.read_excel(
+    r"C:\Users\q9077\Downloads\2021_Revenue.xlsx",
+    engine="openpyxl",
+    sheet_name="2021 Revenue",
+    skiprows=range(20),
+    skipfooter = 0)
+    
+    #show top line of data 
+   
+    df_can.head()
