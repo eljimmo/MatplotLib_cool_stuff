@@ -45,3 +45,40 @@ df_can = pd.read_excel(
     #show top line of data 
    
     df_can.head()
+
+
+
+##The usecols parameter allows you to select which columns to use:
+
+
+a = pd.read_table("file", header=None, sep=" ", usecols=range(8))
+
+
+  
+ try:
+--> 465     data = io.parse(
+    466         sheet_name=sheet_name,
+    467         header=header,
+    468         names=names,
+    469         index_col=index_col,
+    470         usecols=usecols,
+    471         squeeze=squeeze,
+    472         dtype=dtype,
+    473         converters=converters,
+    474         true_values=true_values,
+    475         false_values=false_values,
+    476         skiprows=skiprows,
+    477         nrows=nrows,
+    478         na_values=na_values,
+    479         keep_default_na=keep_default_na,
+    480         na_filter=na_filter,
+    481         verbose=verbose,
+    482         parse_dates=parse_dates,
+    483         date_parser=date_parser,
+    484         thousands=thousands,
+    485         decimal=decimal,
+    486         comment=comment,
+    487         skipfooter=skipfooter,
+    488         convert_float=convert_float,
+    489         mangle_dupe_cols=mangle_dupe_cols,
+    490     )
